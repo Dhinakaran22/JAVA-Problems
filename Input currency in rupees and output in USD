@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Currency
+{
+ public static void main(String[] args)
+ {
+  double Currency,USD;
+  USD = 82.42;
+  Scanner input = new Scanner(System.in);
+  System.out.println("Enter Rupees");
+  double Rupees = input.nextDouble();
+  Currency = Rupees/USD;
+  System.out.println("USD of is"+Currency);
+ }
+}
