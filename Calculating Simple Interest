@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class SI
+{
+ public static void main(String[] args)
+ {
+  //Getting input from user
+
+  Scanner input = new Scanner(System.in);
+  System.out.println("Enter principal:");
+  double P = input.nextDouble();
+
+  System.out.println("Enter Time:");
+  double T = input.nextDouble();
+
+  System.out.println("Enter Rate");
+  double R = input.nextDouble();
+
+  //Simple interest calculation
+  double SI = (P*T*R)/100;
+  System.out.println("The calculated   SI:"+SI);
+ }
+}
+
