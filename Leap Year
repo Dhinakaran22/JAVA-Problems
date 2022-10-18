@@ -25,11 +25,11 @@ public class Leap_year
   }
   if(flag) 
   {
-   System.out.println(Year+"is Leap year");
+   System.out.println(Year +"is Leap year");
   }
   else
   {
-   System.out.println(Year+"is not a Leap year");
+   System.out.println(Year +"is not a Leap year");
   }
  }
 } 
