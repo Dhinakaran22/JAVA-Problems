@@ -6,7 +6,24 @@ public class Leap_year
   Scanner input = new Scanner(System.in);
   System.out.println("Enter the year:");
   int Year = input.nextInt();
-  if (Year % 4 == 0)
+  boolean flag = false;
+  if(Year % 400 == 0)
+  {
+   flag = true;
+  }
+  else if(Year % 100 == 0)
+  {
+   flag = false;
+  }
+  else if (Year % 4 == 0)
+  {
+   flag = true;
+  }
+  else
+  {
+   flag = false;
+  }
+  if(flag) 
   {
    System.out.println(Year+"is Leap year");
   }
