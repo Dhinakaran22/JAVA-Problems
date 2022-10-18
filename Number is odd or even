@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Odd
+public class Odd_even
 {
  public static void main(String[] args)
  {
