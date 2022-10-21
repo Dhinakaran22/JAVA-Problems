@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] ars)
+    {
+        int i = 2;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int num = input.nextInt();
+        for (i=1; i <= 100; i++ ) {
+            int mul = num * i;
+            System.out.println(i + "x 8 = " + mul);
+        }
+
+    }
+}
