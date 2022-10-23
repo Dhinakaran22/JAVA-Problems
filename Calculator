@@ -1,0 +1,52 @@
+// Calculator
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // input the operator
+        System.out.print("Enter the operator:");
+        char op = input.next().trim().charAt(0);
+        int c=0;
+
+        // Condition for operator checking
+        if (op == '+' || op == '-' || op == '*' || op == '/' || op == '%' ){
+
+            System.out.print("Enter a:");
+            int a = input.nextInt();
+            System.out.print("Enter b:");
+            int b = input.nextInt();
+
+            // Condition for calculation
+            if (op == '+')
+            {
+                 c = a + b;
+            }
+            if (op == '-')
+            {
+                 c = a - b;
+            }
+            if (op == '*')
+            {
+                c = a * b;
+            }
+            if (op == '/')
+            {
+               if (b != 0) {
+                   c = a / b;
+               }
+               else {
+                   System.out.println("Cannot divided by 0");
+               }
+            }
+            if (op == '%')
+            {
+                c = a % b;
+            }
+        }
+        else{
+            System.out.println("Enter valid operator");
+        }
+        System.out.println(c);
+    }
+}
