@@ -1,0 +1,22 @@
+// Alphabet case check
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        // Getting input and charAt(index value) addresses the input
+        Scanner input = new Scanner(System.in);
+        char name = input.next().charAt(1);
+
+        // Using if condition
+        if(name >= 'a' && name <= 'z') {
+            System.out.println("Lowercase");
+        }
+        if(name >= 'A' && name <= 'Z')
+        {
+            System.out.println("Uppercase");
+        }
+        else {
+            System.out.println("Enter the valid character");
+        }
+    }
+}
