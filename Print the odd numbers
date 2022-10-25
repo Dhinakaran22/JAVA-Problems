@@ -1,0 +1,24 @@
+// Printing the Odd numbers
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        // Input
+        Scanner input = new Scanner(System.in);
+
+        // User gives the value for how many time the loop should be Runned
+        System.out.print("How many times loop running:");
+        int i = input.nextInt();
+
+        int n = 1;
+
+        // Conditions
+        for (n = 0; n < i; n++) {
+            n = n + 1;
+            if (n % 2 != 0) {
+                System.out.println(n);
+            }
+        }
+    }
+}
