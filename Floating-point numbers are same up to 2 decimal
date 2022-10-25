@@ -1,0 +1,33 @@
+// Reads two floating point numbers and tests whether they are the same up to Two decimal places
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Getting inputs from user
+        System.out.print("Enter the 1st floating-point number:");
+        float a = input.nextFloat();
+
+        System.out.print("Enter the 2nd floating-point number:");
+        float b = input.nextFloat();
+
+        // Rounding the values to Two digits
+        // Using Math.round function
+        a = Math.round(a * 100);
+        a = a / 100;
+        System.out.println(a);
+
+        b = Math.round(b * 100);
+        b = b /100;
+        System.out.println(b);
+
+        // Conditions
+        if (a == b) {
+            System.out.println("They are same");
+        }
+        else if(a != b) {
+            System.out.println("They are different");
+        }
+    }
+}
