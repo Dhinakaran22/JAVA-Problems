@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // Getting inputs from user
+        // Getting inputs from user.
         System.out.print("Enter the 1st floating-point number:");
         float a = input.nextFloat();
 
