@@ -1,0 +1,18 @@
+// Adding all numbers in array
+
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = new int[5];
+        arr[0] = 23;
+        arr[1] = 28;
+        arr[2] = 98;
+        arr[3] = 76;
+        arr[4] = 67;
+
+        int a = 0;
+        for (int i=0; i<arr.length; i++) {
+        a = arr[i] + a;
+            System.out.println(a);
+        }
+    }
+}
