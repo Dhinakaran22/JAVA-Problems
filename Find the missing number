@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("Enter n:");
+            int n = scanner.nextInt();
+
+            int[] a = new int[n];
+
+            for (int i = 0; i < a.length; i++) {
+                a[i] = scanner.nextInt();
+            }
+
+            int sum = 0;
+            for (int i = 0; i < a.length; i++) {
+                sum = sum + a[i];
+            }
+            // Add 0 to the input
+            n = n * (n + 1) / 2 - sum;
+            System.out.println("Missing number:"+n);
+        }
+    }
+    /* INPUT:
+      n = 10
+      0 1 2 3 4 6 7 8 9 10
+      OUTPUT:
+      Missing number : 5
+     */
