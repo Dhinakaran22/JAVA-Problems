@@ -44,7 +44,7 @@ public class Main {
                 c = a % b;
             }
         }
-        else{
+        else {
             System.out.println("Enter valid operator");
         }
         System.out.println(c);
