@@ -1,0 +1,25 @@
+// To calculate the perimeter and area of a Rectangle
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double l = input.nextDouble();
+        double w = input.nextDouble();
+
+        area(l,w);
+
+        perimeter(l,w);
+
+
+    }
+    static void area(Double l,Double w) {
+        double area = l * w;
+        System.out.println("Area of rectangle :"+area);
+    }
+    static void perimeter(Double l, Double w) {
+        double perimeter = 2 * (l + w);
+        System.out.println("Area of rectangle :"+perimeter);
+    }
+}
