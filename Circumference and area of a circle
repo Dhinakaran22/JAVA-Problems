@@ -1,0 +1,26 @@
+// Write a program to print the circumference and area of a circle.
+// The radius is entered by the user by defining your own method.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        double r = input.nextInt();
+
+        double Area = area(r);
+        double Circumference = circumference(r);
+        System.out.println("Area of a circle is:"+Area);
+        System.out.println("Circumference of a circle is:"+Circumference);
+    }
+
+     static double area(double r) {
+        double area = Math.PI * r * r;
+        return area;
+    }
+    static double circumference(double r) {
+        double circumference = 2 * Math.PI * r;
+        return circumference;
+    }
+}
