@@ -1,1 +1,1 @@
-# java_basic_programs
+# JAVA-PROBLEMS-SOLUTIONS
