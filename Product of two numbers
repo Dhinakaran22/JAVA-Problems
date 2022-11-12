@@ -1,0 +1,28 @@
+// Define a method that returns the product of two numbers entered by user.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        // Function calling
+        int ans = products();
+        System.out.print("The product is:"+ans);
+    }
+
+    //Creating function
+    static int products() {
+
+        // Getting inputs
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a:");
+        int a = input.nextInt();
+
+        System.out.print("Enter b:");
+        int b = input.nextInt();
+        int c = a * b;
+
+        // Returning the value to main function
+        return c;
+    }
+}
