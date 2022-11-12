@@ -1,0 +1,38 @@
+// Define a method to check the given number is in increasing or decreasing order.
+
+import java.util.Scanner;
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+
+        // Function calling
+        greater();
+    }
+    private static void greater() {
+
+        // Getting input from user.
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+
+        int b = input.nextInt();
+
+        int c = input.nextInt();
+
+        // Using conditions to check the number.
+        // Decreasing order = a is greater than b and b is greater than c.
+        if ((a > b ) && (b > c)) {
+            System.out.println("Decreasing order");
+        }
+
+        //Increasing order = a is less than b and b is less than c.
+        else if ((a < b) &&(b < c )) {
+            System.out.println("Increasing order");
+        }
+
+        // The given number is not in any order.
+        else {
+            System.out.println("The numbers are not in order");
+        }
+    }
+}
