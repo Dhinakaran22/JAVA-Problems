@@ -1,0 +1,28 @@
+//Average of an array
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the size of an array:");
+        int n = scanner.nextInt();
+
+        int[] nums = new int[n];
+        int sum = 0;
+        int avg = 0;
+
+        System.out.print("Enter the array elements:");
+
+        for (int i = 0; i < n; i++) {
+            nums[i] = scanner.nextInt();
+        }
+
+        for (int i = 0; i < n; i++) {
+            sum = sum + nums[i];
+            avg = sum / n;
+        }
+        System.out.println("The average of an array is:"+avg);
+    }
+}
